@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominion Voice Broadcast | Sounding Faith. Speaking Life.</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dominion-black text-heaven-white">
+
+  <!-- Main HTML content injected from user's original file -->
+  <!-- Placeholder here: will be filled dynamically in this script -->
+  <!-- Navigation -->
+    <nav class="fixed w-full bg-dominion-black bg-opacity-90 z-50 border-b border-anointed-gold border-opacity-20">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                       <div class="w-15 h-12 mr-2">
+    <img src="assets/logo.png" alt="DVB Logo" class="w-full h-full object-contain rounded-full" />
+                        </div>
+                        <span class="heading text-heaven-white text-xl hidden md:block">Dominion Voice Broadcast</span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-heaven-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-heaven-white hover:text-anointed-gold transition">Home</a>
+                    <a href="#about" class="nav-link text-heaven-white hover:text-anointed-gold transition">About</a>
+                    <a href="#media" class="nav-link text-heaven-white hover:text-anointed-gold transition">Media</a>
+                    <a href="#programs" class="nav-link text-heaven-white hover:text-anointed-gold transition">Programs</a>
+                    <a href="#volunteer" class="nav-link text-heaven-white hover:text-anointed-gold transition">Volunteer</a>
+                    <a href="#partner" class="nav-link text-heaven-white hover:text-anointed-gold transition">Partner</a>
+                    <a href="#contact" class="nav-link text-heaven-white hover:text-anointed-gold transition">Contact</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dominion-black py-4 px-4 border-t border-anointed-gold border-opacity-20">
+            <a href="#home" class="block py-2 text-heaven-white">Home</a>
+            <a href="#about" class="block py-2 text-heaven-white">About</a>
+            <a href="#media" class="block py-2 text-heaven-white">Media</a>
+            <a href="#programs" class="block py-2 text-heaven-white">Programs</a>
+            <a href="#volunteer" class="block py-2 text-heaven-white">Volunteer</a>
+            <a href="#partner" class="block py-2 text-heaven-white">Partner</a>
+            <a href="#contact" class="block py-2 text-heaven-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-24 pb-32 md:pt-32 md:pb-40 radio-waves">
+        <div class="absolute inset-0 gradient-overlay"></div>
+        <div class="absolute inset-0 bg-[url('assets/banner1.jpg')] bg-cover bg-center opacity-40"></div>
+        
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="heading text-4xl md:text-6xl font-bold mb-6 text-anointed-gold">
+                Sounding Faith. <span class="text-heaven-white">Speaking Life.</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+                Dominion Voice Broadcast is spreading the message of faith, hope, and love through radio, television, and digital platforms.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <a href="#media" class="listen-btn bg-anointed-gold text-dominion-black px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-500 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-headphones"></i> Listen Live
+                </a>
+                <a href="#media" class="listen-btn border-2 border-anointed-gold text-anointed-gold px-8 py-4 rounded-full font-bold text-lg hover:bg-anointed-gold hover:text-dominion-black transition flex items-center justify-center gap-2">
+                    <i class="fas fa-tv"></i> Watch Now
+                </a>
+            </div>
+            
+            <!-- Featured Programs -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
+                <div class="bg-dominion-black bg-opacity-80 p-6 rounded-lg border-l-4 border-anointed-gold">
+                    <h3 class="text-anointed-gold heading text-xl mb-2">Dominion Devotions</h3>
+                    <p class="text-faith-grey">Morning spiritual nourishment to start your day right.</p>
+                </div>
+                <div class="bg-dominion-black bg-opacity-80 p-6 rounded-lg border-l-4 border-anointed-gold">
+                    <h3 class="text-anointed-gold heading text-xl mb-2">Tech Talk Nigeria</h3>
+                    <p class="text-faith-grey">Where faith and technology intersect for national impact.</p>
+                </div>
+                <div class="bg-dominion-black bg-opacity-80 p-6 rounded-lg border-l-4 border-anointed-gold">
+                    <h3 class="text-anointed-gold heading text-xl mb-2">Voices of Influence</h3>
+                    <p class="text-faith-grey">Powerful interviews with kingdom influencers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-dominion-black">
+        <div class="container mx-auto px-4">
+            <h2 class="heading text-3xl md:text-4xl text-center mb-16 text-anointed-gold">About Dominion Voice Broadcast</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-20">
+                <div class="space-y-6">
+                    <div class="border-l-4 border-anointed-gold pl-4">
+                        <h3 class="heading text-2xl text-heaven-white mb-2">Our Mission</h3>
+                        <p class="text-faith-grey">To deliver rich, spirit-filled, and solution-driven content that inspire, empower, and build individuals across generations, spheres, and nations. To deliver enriching content that uplifts lives, transforms culture, empowers youth, and fosters spiritual and intellectual growth.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-anointed-gold pl-4">
+                        <h3 class="heading text-2xl text-heaven-white mb-2">Our Vision</h3>
+                        <p class="text-faith-grey">To become Nigeria’s leading multimedia voice transforming lives through faith-based broadcasting, creative media, and digital influence and become Nigeria’s leading media voice that drives inspiration, innovation, and influence across faith, tech, music, and lifestyle.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="assets/banner2.jpg" alt="Radio studio" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+            
+            <!-- Core Values -->
+            <div class="mt-12">
+                <h3 class="heading text-2xl text-center mb-8 text-anointed-gold">Our Core Values</h3>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+                        <div class="w-16 h-16 bg-anointed-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cross text-anointed-gold text-2xl"></i>
+                        </div>
+                        <h4 class="heading text-lg text-heaven-white mb-2">Faith</h4>
+                        <p class="text-faith-grey text-sm">Rooted in biblical truth and Christian principles</p>
+                    </div>
+                    <div class="bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+                        <div class="w-16 h-16 bg-anointed-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-medal text-anointed-gold text-2xl"></i>
+                        </div>
+                        <h4 class="heading text-lg text-heaven-white mb-2">Excellence</h4>
+                        <p class="text-faith-grey text-sm">Committed to quality in all we do</p>
+                    </div>
+                    <div class="bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+                        <div class="w-16 h-16 bg-anointed-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-lightbulb text-anointed-gold text-2xl"></i>
+                        </div>
+                        <h4 class="heading text-lg text-heaven-white mb-2">Innovation</h4>
+                        <p class="text-faith-grey text-sm">Creative solutions for maximum impact</p>
+                    </div>
+                    <div class="bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+                        <div class="w-16 h-16 bg-anointed-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullhorn text-anointed-gold text-2xl"></i>
+                        </div>
+                        <h4 class="heading text-lg text-heaven-white mb-2">Influence</h4>
+                        <p class="text-faith-grey text-sm">Transforming lives and shaping culture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="py-16 md:py-24 bg-dominion-black">
+        <div class="container mx-auto px-4">
+            <h2 class="heading text-3xl md:text-4xl text-center mb-16 text-anointed-gold">Experience Dominion Voice</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Radio Player -->
+                <div class="bg-dominion-black rounded-xl overflow-hidden border border-anointed-gold border-opacity-20">
+                    <div class="p-6 bg-dominion-black">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-broadcast-tower text-anointed-gold text-2xl mr-3"></i>
+                            <h3 class="heading text-2xl text-heaven-white">Dominion Voice Radio</h3>
+                        </div>
+                        <p class="text-faith-grey mb-6">Streaming faith-filled content 24/7 to uplift and inspire.</p>
+                        <div class="bg-dominion-black rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <p class="text-anointed-gold font-medium">Now Playing:</p>
+                                    <p id="now-playing" class="text-heaven-white">Dominion Devotion - Morning Glory</p>
+                                </div>
+                                <div id="radio-indicator" class="flex items-center">
+                                    <span class="text-xs text-anointed-gold mr-2">LIVE</span>
+                                    <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                                </div>
+                            </div>
+                            <div class="bg-dominion-black p-4 rounded-lg border border-anointed-gold">
+  <script src="//myradiostream.com/embed/DVBng1"></script>
+</div>
+
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TV Player -->
+                <div class="bg-dominion-black rounded-xl overflow-hidden border border-anointed-gold border-opacity-20">
+                    <div class="p-6 bg-dominion-black">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-tv text-anointed-gold text-2xl mr-3"></i>
+                            <h3 class="heading text-2xl text-heaven-white">Dominion Voice TV</h3>
+                        </div>
+                        <p class="text-faith-grey mb-6">Visual inspiration and kingdom content for your viewing pleasure.</p>
+                        <div class="bg-dominion-black rounded-lg overflow-hidden">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe class="w-full h-64 md:h-80" src="https://www.youtube.com/embed/@DominionVoiceBroadcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="p-4 flex justify-center">
+                                <a href="https://www.youtube.com/@DominionVoiceBroadcast" target="_blank" class="bg-anointed-gold text-dominion-black px-6 py-2 rounded-full flex items-center">
+                                    <i class="fab fa-youtube mr-2"></i> Subscribe
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-16 md:py-24 bg-dominion-black">
+        <div class="container mx-auto px-4">
+            <h2 class="heading text-3xl md:text-4xl text-center mb-16 text-anointed-gold">Our Programs</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Program 1 -->
+                <div class="program-card bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 transition duration-300">
+                    <div class="w-16 h-16 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-anointed-gold text-2xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Tech Talk Nigeria</h3>
+                    <p class="text-faith-grey mb-4">Weekly discussions on technology innovations with a faith perspective.</p>
+                    <div class="flex items-center text-faith-grey text-sm">
+                        <i class="far fa-clock mr-2"></i>
+                        <span>Wednesdays, 3 PM</span>
+                    </div>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="program-card bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 transition duration-300">
+                    <div class="w-16 h-16 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pray text-anointed-gold text-2xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Dominion Devotion</h3>
+                    <p class="text-faith-grey mb-4">Daily morning spiritual nourishment to start your day in God's presence.</p>
+                    <div class="flex items-center text-faith-grey text-sm">
+                        <i class="far fa-clock mr-2"></i>
+                        <span>Weekdays, 5:00 - 5:30AM</span>
+                    </div>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="program-card bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 transition duration-300">
+                    <div class="w-16 h-16 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chalkboard-teacher text-anointed-gold text-2xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Innovative Masterclass</h3>
+                    <p class="text-faith-grey mb-4">In-depth teaching sessions on media, communication, and kingdom influence.</p>
+                    <div class="flex items-center text-faith-grey text-sm">
+                        <i class="far fa-clock mr-2"></i>
+                        <span>Saturdays, 10 AM</span>
+                    </div>
+                </div>
+                
+                <!-- Program 4 -->
+                <div class="program-card bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 transition duration-300">
+                    <div class="w-16 h-16 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-plug text-anointed-gold text-2xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">The Plug</h3>
+                    <p class="text-faith-grey mb-4">Your connection to relevant information about events, resources and opportunities.</p>
+                    <div class="flex items-center text-faith-grey text-sm">
+                        <i class="far fa-clock mr-2"></i>
+                        <span>Fridays, 5 PM</span>
+                    </div>
+                </div>
+                
+                <!-- Program 5 -->
+                <div class="program-card bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 transition duration-300">
+                    <div class="w-16 h-16 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-anointed-gold text-2xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Voices of Influence</h3>
+                    <p class="text-faith-grey mb-4">Powerful interviews with kingdom influencers transforming society.</p>
+                    <div class="flex items-center text-faith-grey text-sm">
+                        <i class="far fa-clock mr-2"></i>
+                        <span>Sundays, 4 PM</span>
+                    </div>
+                </div>
+                
+                <!-- Program 6 -->
+                <div class="program-card bg-dominion-black p-6 rounded-lg border border-anointed-gold border-opacity-20 transition duration-300">
+                    <div class="w-16 h-16 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-anointed-gold text-2xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Marketplace Mondays</h3>
+                    <p class="text-faith-grey mb-4">Faith and business insights for Christian professionals and entrepreneurs.</p>
+                    <div class="flex items-center text-faith-grey text-sm">
+                        <i class="far fa-clock mr-2"></i>
+                        <span>Mondays, 1 PM</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="border-2 border-anointed-gold text-anointed-gold px-8 py-3 rounded-full font-bold text-lg hover:bg-anointed-gold hover:text-dominion-black transition">
+                    View Full Schedule
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="py-16 md:py-24 bg-dominion-black">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="heading text-3xl md:text-4xl mb-6 text-anointed-gold">Join Our Volunteer Team</h2>
+                    <p class="text-faith-grey mb-8">We believe in the power of serving. Whether you're passionate about media, technology, administration, or outreach, we have opportunities for you to use your gifts for kingdom impact.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-anointed-gold mt-1 mr-3"></i>
+                            <span class="text-faith-grey">Gain valuable media and ministry experience</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-anointed-gold mt-1 mr-3"></i>
+                            <span class="text-faith-grey">Be part of a dynamic team making eternal impact</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-anointed-gold mt-1 mr-3"></i>
+                            <span class="text-faith-grey">Flexible schedules to fit your availability</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-anointed-gold mt-1 mr-3"></i>
+                            <span class="text-faith-grey">Training provided in all areas</span>
+                        </li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeESP-s4zH9wiH4kdSrgguxgdqgsHUXFImD6DVj4NKmp3-Eog/viewform?usp=header" target="_blank" class="inline-block bg-anointed-gold text-dominion-black px-8 py-3 rounded-full font-bold text-lg hover:bg-yellow-500 transition">
+                        Volunteer Now
+                    </a>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Volunteer team" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section id="partner" class="py-16 md:py-24 bg-dominion-black">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="heading text-3xl md:text-4xl mb-6 text-anointed-gold">Partner With Us</h2>
+                <p class="text-faith-grey max-w-3xl mx-auto">Your financial partnership helps us spread the gospel and produce life-transforming content. Together, we can reach more people and make greater impact.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-dominion-black p-8 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+                    <div class="w-20 h-20 bg-anointed-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-seedling text-anointed-gold text-3xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Sower Partnership</h3>
+                    <p class="text-faith-grey mb-6">Monthly seed sowing to sustain our core operations and broadcasts.</p>
+                    <button class="border border-anointed-gold text-anointed-gold px-6 py-2 rounded-full">
+                        Partner Now
+                    </button>
+                </div>
+                
+                <div class="bg-dominion-black p-8 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+                    <div class="w-20 h-20 bg-anointed-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hands-helping text-anointed-gold text-3xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Kingdom Builder</h3>
+                    <p class="text-faith-grey mb-6">Significant one-time or annual gifts that expand our reach and capabilities.</p>
+                    <button class="border border-anointed-gold text-anointed-gold px-6 py-2 rounded-full">
+                        Give Now
+                    </button>
+                </div>
+                
+                <div class="bg-dominion-black p-8 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+                    <div class="w-20 h-20 bg-anointed-gold bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullhorn text-anointed-gold text-3xl"></i>
+                    </div>
+                    <h3 class="heading text-xl text-heaven-white mb-3">Program Sponsorship</h3>
+                    <p class="text-faith-grey mb-6">Sponsor a specific program or initiative to further its impact.</p>
+                    <button class="border border-anointed-gold text-anointed-gold px-6 py-2 rounded-full">
+                        Sponsor Now
+                    </button>
+                </div>
+            </div>
+     <!---       
+            <div class="bg-dominion-black p-8 rounded-lg border border-anointed-gold border-opacity-30">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="heading text-2xl text-heaven-white mb-4">Impact Report 2023</h3>
+                        <p class="text-faith-grey mb-6">See how God has used Dominion Voice Broadcast to transform lives this past year through media and outreach.</p>
+                        <button class="bg-anointed-gold text-dominion-black px-6 py-3 rounded-full font-bold hover:bg-yellow-500 transition">
+                            Download Report
+                        </button>
+                    </div>
+                    <div class="bg-faith-grey bg-opacity-10 p-6 rounded-lg">
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <p class="heading text-3xl text-anointed-gold mb-1">1.2M+</p>
+                                <p class="text-faith-grey text-sm">Monthly Listeners</p>
+                            </div>
+                            <div>
+                                <p class="heading text-3xl text-anointed-gold mb-1">65+</p>
+                                <p class="text-faith-grey text-sm">Countries Reached</p>
+                            </div>
+                            <div>
+                                <p class="heading text-3xl text-anointed-gold mb-1">2,500+</p>
+                                <p class="text-faith-grey text-sm">Volunteer Hours</p>
+                            </div>
+                            <div>
+                                <p class="heading text-3xl text-anointed-gold mb-1">300+</p>
+                                <p class="text-faith-grey text-sm">Life Transformations</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-dominion-black">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="bg-dominion-black p-8 md:p-12 rounded-lg border border-anointed-gold border-opacity-20 text-center">
+      <h3 class="heading text-2xl md:text-3xl mb-4 text-anointed-gold">Stay Connected</h3>
+      <p class="text-faith-grey mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for program updates, devotionals, and kingdom resources delivered to your inbox.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSuwVI78NOI0Ql2VUfzvX6UsKJibL2KVmBgrTyc1Twt2F-IA/viewform?usp=header" 
+         target="_blank" 
+         class="bg-anointed-gold text-dominion-black px-6 py-3 rounded-full font-bold hover:bg-yellow-500 transition whitespace-nowrap">
+        Subscribe Now
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+   <section id="contact" class="py-16 md:py-24 bg-dominion-black">
+        <div class="container mx-auto px-4">
+            <h2 class="heading text-3xl md:text-4xl text-center mb-16 text-anointed-gold">Contact Us</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-faith-grey mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-dominion-black border border-faith-grey border-opacity-30 text-heaven-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-anointed-gold focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-faith-grey mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full bg-dominion-black border border-faith-grey border-opacity-30 text-heaven-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-anointed-gold focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-faith-grey mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full bg-dominion-black border border-faith-grey border-opacity-30 text-heaven-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-anointed-gold focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-faith-grey mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-dominion-black border border-faith-grey border-opacity-30 text-heaven-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-anointed-gold focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="bg-anointed-gold text-dominion-black px-8 py-3 rounded-full font-bold hover:bg-yellow-500 transition w-full md:w-auto">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-anointed-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="heading text-lg text-heaven-white mb-2">Headquarters</h4>
+                                <p class="text-faith-grey">Ibadan, Nigeria</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-envelope text-anointed-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="heading text-lg text-heaven-white mb-2">Email Us</h4>
+                                <p class="text-faith-grey">info@dominionvoicebroadcast.com.ng</p>
+                                <p class="text-faith-grey">dominionvoicebroadcast@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-anointed-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="heading text-lg text-heaven-white mb-2">Call Us</h4>
+                                <p class="text-faith-grey">+234 803 989 2294 (Office)</p>
+                                <p class="text-faith-grey">+234 915 888 7997 (Prayer Line)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fab fa-whatsapp text-anointed-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="heading text-lg text-heaven-white mb-2">WhatsApp</h4>
+                                <a href="https://wa.me/2349158887997" class="text-faith-grey hover:text-anointed-gold transition">Click to send a message</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12">
+                        <h4 class="heading text-lg text-heaven-white mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center text-anointed-gold hover:bg-anointed-gold hover:text-dominion-black transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center text-anointed-gold hover:bg-anointed-gold hover:text-dominion-black transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center text-anointed-gold hover:bg-anointed-gold hover:text-dominion-black transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center text-anointed-gold hover:bg-anointed-gold hover:text-dominion-black transition">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-anointed-gold bg-opacity-20 rounded-full flex items-center justify-center text-anointed-gold hover:bg-anointed-gold hover:text-dominion-black transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dominion-black py-12 border-t border-anointed-gold border-opacity-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 border-2 border-anointed-gold rounded-full flex items-center justify-center mr-3">
+                            <span class="text-anointed-gold heading">DVB</span>
+                        </div>
+                        <span class="heading">Dominion Voice Broadcast</span>
+                    </div>
+                    <p class="text-faith-grey text-sm">Sounding Faith. Speaking Life. Reaching the world with the good news through media.</p>
+                </div>
+                
+                <div>
+                    <h4 class="heading text-lg text-heaven-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-faith-grey hover:text-anointed-gold transition text-sm">Home</a></li>
+                        <li><a href="#about" class="text-faith-grey hover:text-anointed-gold transition text-sm">About Us</a></li>
+                        <li><a href="#media" class="text-faith-grey hover:text-anointed-gold transition text-sm">Radio & TV</a></li>
+                        <li><a href="#programs" class="text-faith-grey hover:text-anointed-gold transition text-sm">Programs</a></li>
+                        <li><a href="#partner" class="text-faith-grey hover:text-anointed-gold transition text-sm">Partner with Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="heading text-lg text-heaven-white mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Volunteer</a></li>
+                        <li><a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Prayer Requests</a></li>
+                        <li><a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Testimonies</a></li>
+                        <li><a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Events</a></li>
+                        <li><a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="heading text-lg text-heaven-white mb-4">Newsletter</h4>
+                    <p class="text-faith-grey text-sm mb-4">Subscribe to receive updates and spiritual nourishment.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-dominion-black border border-faith-grey border-opacity-30 text-heaven-white px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-anointed-gold focus:border-transparent text-sm w-full">
+                        <button type="submit" class="bg-anointed-gold text-dominion-black px-4 py-2 rounded-r-lg text-sm">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-anointed-gold border-opacity-20 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-faith-grey text-sm mb-4 md:mb-0">&copy; 2023 Dominion Voice Broadcast. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Privacy Policy</a>
+                    <a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Terms of Service</a>
+                    <a href="#" class="text-faith-grey hover:text-anointed-gold transition text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Simulate radio player status
+        const nowPlaying = [
+            "Dominion Devotion - Morning Glory",
+            "Tech Talk Nigeria - AI & Kingdom Impact",
+            "Voices of Influence with Pastor James",
+            "Gospel Hour - Worship Experience",
+            "Marketplace Mondays - Kingdom Entrepreneurship"
+        ];
+        
+        let currentTrack = 0;
+        setInterval(() => {
+            currentTrack = (currentTrack + 1) % nowPlaying.length;
+            document.getElementById('now-playing').textContent = nowPlaying[currentTrack];
+        }, 10000);
+    </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
